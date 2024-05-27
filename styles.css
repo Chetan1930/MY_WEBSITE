@@ -1,0 +1,106 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2c2c2c;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #76c7c0;
+}
+
+section {
+    padding: 2rem;
+}
+
+.social-media a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #76c7c0;
+}
+
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.code-snippet {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.code-snippet pre {
+    margin: 0;
+}
+
+
+/* Sticky header and nav */
+/* header, nav {
+   
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255); 
+    z-index: 1000; 
+    padding: 10px 0;
+}
+
+
+nav {
+    top: 60px; 
+} */
+
+/* Continuous colorful animation for the header text */
+@keyframes textGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header h1 {
+    font-size: 2em;
+    background: linear-gradient(270deg, #ff6f61, #ff8c61, #ffa061, #ffb761, #ffd061, #ffeb61, #ff6f61);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGradient 10s ease infinite;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
